@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    --firstcolor: #4f4747;
+    --secondcolor: #694747;
+    --pw: 960px;
+    --ph: 1280px;
+    width: 100%;
+    background-color: #101013;
+}
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+textarea{
+    resize: none;
+    height: 50px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover {
+    -webkit-text-fill-color: #ffffff;
+    -webkit-box-shadow: 0 0 0 1000px #13151a inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.raz {
+  -moz-appearance: textfield;
+}
+.raz::-webkit-inner-spin-button {
+  display: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.pasport{
+    margin: 0 auto;
+    width: 50%;
+
+}
+.text{
+    position: absolute;
+    color: var(--firstcolor);
+    font-weight: bold;
+}
+.issued{
+    position: absolute;
+    left: 100px;
+    top: 55px;
+    rotate: 0.7deg;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+}
+.issuedDate{
+    position: absolute;
+    left: 100px;
+    top: 128px;
+    rotate: 1deg;
+}
+.divCode{
+    position: absolute;
+    left: 300px;
+    width: 100px;
+    top: 130px;
+    rotate: 0.5deg;
+}
+.surname{
+    position: absolute;
+    left: 210px;
+    top: 373px;
+    rotate: 0deg;
+    width: 200px;
+    height: 50px;
+}
+.name{
+    position: absolute;
+    width: 220px;
+    left: 200px;
+    top: 416px;
+    rotate: -0.5deg;
+}
+.patronymic{
+    position: absolute;
+    width: 220px;
+    left: 205px;
+    top: 442px;
+    rotate: -0.5deg;
+}
+.gender{
+    position: absolute;
+    left: 188px;
+    top: 467px;
+    rotate: -0.5deg;
+}
+.birthDay{
+    position: absolute;
+    left: 280px;
+    top: 465px;
+    rotate: -0.5deg;
+}
+.city{
+    position: absolute;
+    width: 220px;
+    height: 70px;
+    left: 210px;
+    top: 490px;
+    rotate: -0.5deg;
+}
+.pasportSerial__upper{
+    color: var(--secondcolor);
+    position: absolute;
+    rotate: 90.5deg;
+    left: 400px;
+    top: 130px;
+    width: 100px;
+    letter-spacing: 8px;
+}
+.pasportNumber__upper{
+    color: var(--secondcolor);
+    position: absolute;
+    rotate: 91deg;
+    left: 400px;
+    top: 230px;
+    width: 100px;
+    letter-spacing: 8px;
+}
+.pasportSerial__lower{
+    color: var(--secondcolor);
+    position: absolute;
+    rotate: 90deg;
+    left: 410px;
+    top: 430px;
+    width: 100px;
+    letter-spacing: 8px;
+}
+.pasportNumber__lower{
+    color: var(--secondcolor);
+    position: absolute;
+    rotate: 92deg;
+    left: 408px;
+    top: 520px;
+    width: 100px;
+    letter-spacing: 8px;
+}
+.firstLine{
+    position: absolute;
+    width: 220px;
+    left: 40px;
+    top: 590px;
+    rotate: 0deg;
+    scale: 1.15;
+}
+.secondLine{
+    position: absolute;
+    width: 220px;
+    left: 40px;
+    top: 620px;
+    rotate: 0deg;
+    scale: 1.15;
+}
+.img{
+    content: url('../images/pasport.png');
+    width: 480px;
+}

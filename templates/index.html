@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css"/>
+</head>
+<body class="container">
+<div class="pasport" id="pasport">
+    <div class="text">
+        <div class="issued">{{ data['issued'] }}</div>
+        <div class="issuedDate">{{ data['issuedDate'] }}</div>
+        <div class="divCode">{{ data['divCode'] }}</div>
+        <div class="name">{{ data['name'] }}</div>
+        <div class="surname">{{ data['surname'] }}</div>
+        <div class="patronymic">{{ data['patronymic'] }}</div>
+        <div class="gender">{{ data['gender'] }}</div>
+        <div class="birthDay">{{ data['birthDay'] }}</div>
+        <div class="city">{{ data['city'] }}</div>
+        <div class="pasportSerial__upper">{{ data['pasportSerial'] }}</div>
+        <div class="pasportNumber__upper">{{ data['pasportNumber'] }}</div>
+        <div class="pasportSerial__lower">{{ data['pasportSerial'] }}</div>
+        <div class="pasportNumber__lower">{{ data['pasportNumber'] }}</div>
+        <div class="firstLine">{{ data['firstLine'] }}</div>
+        <div class="secondLine">{{ data['secondLine'] }}</div>
+        {{ skew }}
+    </div>
+    <div>
+        <img class="img" src="/static/images/pasport.png" width="480" alt="">
+    </div>
+    <div>
+        <form method="POST" action="">
+            <input style="width:  100vw; height: 100vh; opacity: 0" type="submit" name="" value="Тык">
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    let pasport = document.getElementById('pasport')
+    let value = '{{ transform[0] }}'
+
+    console.log(value)
+    pasport.setAttribute('style', `transform: skewX(${value}deg)`)
+</script>
+</html>
